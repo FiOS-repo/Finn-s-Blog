@@ -6,6 +6,9 @@ const finished = false;
 const goal = 3;
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+//CSS
+const h1color = "palevioletred"
 ---
 
 <html lang="en">
@@ -15,6 +18,11 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{Pagetitle}</title>
+        <style define:vars={{h1color}}>
+            h1 {
+                color: var(--h1color);
+            }
+        </style>
 	</head>
 	<body>
         <a href="/">Home</a>
