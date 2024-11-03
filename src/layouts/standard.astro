@@ -2,7 +2,7 @@
 import Footer from '../components/footer.astro';
 import Nav from '../components/nav.astro';
 import '../styles/global.css';
-const pageTitle = "Home Page";
+const title = "Home Page";
 ---
 <html lang="en">
   <head>
@@ -10,11 +10,11 @@ const pageTitle = "Home Page";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{title}</title>
   </head>
   <body>
     <Nav></Nav>
-    <h1>{pageTitle}</h1>
+    <h1>{title}</h1>
     <Footer />
   </body>
 </html>
