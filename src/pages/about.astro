@@ -4,6 +4,8 @@ const Pagetitle = "About Me"
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 ---
 
 <html lang="en">
@@ -21,6 +23,10 @@ const goal = 3;
 
 		<h1>{Pagetitle}</h1>
 		<p>About the blog from  Finn.</p>
+
+        <p>Skills: </p>
+
+        {skills.map((skill) => <li>{skill}</li>)}
 
         {happy && <p>I'm Happy</p>}
         {finished && <p>I'm finished</p>}
